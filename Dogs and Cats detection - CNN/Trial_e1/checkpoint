@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/srikumar/Desktop/ENPM673_Perception_for_autonomous_robots/Project6/data-0.001-1-2conv-basic.model"
+all_model_checkpoint_paths: "/home/srikumar/Desktop/ENPM673_Perception_for_autonomous_robots/Project6/data-0.001-1-2conv-basic.model"
