@@ -1,0 +1,38 @@
+# ENPM673 - Perception for Autonomous Robots
+# Project 3
+
+Buoy Detection using Gaussian mixture modelss and Expectation Maximization techniques
+
+OS - Ubuntu 16.04/ Windows
+Python version 3.6
+Opencv version 4.1.2
+
+Note: If you are using python 2, the contours function will return 3 values, so just add another variable
+
+Example: contours3, _ = cv2.findContours(dilation1, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
+
+	change it to,
+
+	_,contours3, _ = cv2.findContours(dilation1, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
+
+	For python3, the code will work fine.
+
+There are totally 10 python files.
+
+Run:
+1) histogram_green.py to plot the histogram for green images
+2) histogram_orange.py to plot the histogram for orange images
+3) histogram_yellow.py to plot the histogram for yellow images
+
+4) GMM_Green to generate the mean and standard deviation for the Green training images
+5) GMM_Orange to generate the mean and standard deviation for the Orange training images
+6) GMM_Yellow to generate the mean and standard deviation for the Yellow training images
+
+Use the mean and standard deviation of 3 different gaussians obtained for the three different colours in the detection code.
+
+7) detect_green.py to detect green buoy in the video
+8) detect_orange.py to detct orange_buoy in the video
+9) detect_yellow.py to detect yellow_buoy in the video
+10) detect_all_buoys.py to detect all the buoys in the video.
+
+After running detect_all_buoys.py, a video file "Buoy_detect.avi" with all buoys detected will be stored in the same directory.
